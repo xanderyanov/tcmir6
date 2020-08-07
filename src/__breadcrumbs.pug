@@ -1,0 +1,34 @@
+mixin breadcrumbs
+  .breadcrumbs__area.w0
+    .breadcrumbs.w1
+      div
+        a(href='#') Главная 
+      |           /
+      div
+        a(href='#') Категория 
+      |           /
+      div
+        span Текущий пункт
+
+mixin fake-breadcrumbs
+  .breadcrumbs__area.w0.fakeBreadcrumbs
+    .breadcrumbs.w1
+      .fakeBreadcrumbs
+        .backBtn
+          i.icon-arr-left1
+          span Назад
+        a.shopInBreadcrumbsTitle(href="") Monte Napoleone
+
+
+mixin fake-breadcrumbs_inBrand
+  .breadcrumbs__area.w0
+    .breadcrumbs.w1
+      .fakeBreadcrumbs
+        .backBtn
+          i.icon-arr-left1
+          span Назад
+        .brandTitle
+          h1= pageTitle
+
+
+        
